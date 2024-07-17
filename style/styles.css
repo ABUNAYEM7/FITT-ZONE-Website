@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* only shape font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+:root{
+    --secondary-color:rgba(255, 255, 255, 0.5);
+    --highlighter:rgb(230, 83, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: black;
+    border: 2px solid red;
+}
+main{
+    max-width: 85%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+/* shared style  */
+.display-flex{
+    display: flex;
+}
+/* nav style */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.header-container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.nav-container{
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-container{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.brand-container img{
+    width: 80px;
+    height: 70px;
+    border-radius: 1rem;
+}
+.brand-container h3{
+    color: var(--highlighter);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.nav-item{
+    font-size: 1.15rem;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+#About{
+    padding-right: 1rem;
+}
+.nav-list{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+#orange{
+    background-color: var(--highlighter);
+    padding: 0.3rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+.nav-hamburger{
+    display: none;
+}
+/* hero section style */
+.hero-container{
+    align-items: center;
+}
+
+.hero-left-container h3{
+    max-width: 50%;
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.shape{
+    font-family: "Playwrite CU", cursive;
+}
+.hero-left-container p{
+    max-width: 50%;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+.primary-btn{
+    background-color:var(--highlighter);
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 3.8rem;
+    cursor: pointer;
+}
+.download-btn{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.103);
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 3.8rem;
+    cursor: pointer;
+}
+.hero-right-container{
+    position: relative;
+}
+.free-workout-videos{
+    width: 180px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 7rem;
+    left: 12.4rem;
+}
+.free-workout-videos h3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+   
+}
+.free-workout-videos p{
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+}
+.hero-right-container a{
+    text-decoration: none;
+}
+.videos-tutorials{
+    width: 180px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 16rem;
+}
+.videos-tutorials h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.videos-tutorials p{
+    color: var(--secondary-color);
+}
+.video-icon i{
+    font-size: 2rem;
+    color: red;
+}
+/* habit section style */
+
+.habit-info-container{
+    max-width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.habit-card-section  h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.habit-card-section p{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.habit-card-container{
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+.habit-card{
+    max-width: 230px;
+    max-height: 295px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.habit-card-img-container img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.habit-card-info-container{
+    text-align: center;
+}
+.habit-card-info-container h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.habit-card-info-container p{
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+}
+/* run section style */
+.run-section{
+    background-color: rgb(34, 34, 34);
+    border-radius: 1rem;
+}
+.run-section-content {
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.run-left-container{
+    max-width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.8rem;
+}
+.run-left-container h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.run-left-container p{
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+.run-right-container{
+    max-width: 40%;
+}
+.run-right-container img{
+    max-width: 100%;
+    padding: 0.7rem;
+    border-radius: 1.2rem;
+}
+/* small size media query */
+@media screen and (max-width:576px) {
+    .header-container,
+    main,
+    .run-section-content,
+    .run-right-container,
+    .run-left-container{
+        max-width: 100%;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-hamburger{
+        display: block;
+        color: white;
+        margin-right: 1rem;
+    }
+    .hero-container,
+    .run-section-content{
+        flex-direction: column;
+    }
+    .primary-btn{
+        margin-bottom: 1rem;
+    }
+    .hero-left-container h3,
+    .hero-left-container p{
+        max-width: 100%;
+        text-align: center;
+        margin: 3.5rem auto;
+    }
+    .hero-btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .download-btn{
+        margin-bottom: 1.05rem;
+    }
+    .free-workout-videos{
+        max-width: fit-content;
+    }
+    .videos-tutorials{
+        right: 10rem;
+    }
+    .habit-card-container{
+        grid-template-columns: 1fr;
+    }
+    .run-left-container{
+        text-align: center;
+    }
+}
+/* medium device media query */
+@media screen and (min-width:576px) and (max-width:992px){
+    main{
+        max-width: 100%;
+    }
+    .header-container{
+        max-width: 100%;
+    }
+    .nav-container{
+        padding: 2rem;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-hamburger{
+        display: block;
+        color: white;
+        margin-right: 1rem;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-left-container h3,
+    .hero-left-container p{
+        max-width: 100%;
+        text-align: center;
+        margin: 3.5rem auto;
+    }
+    .hero-btn-container{
+        text-align: center;
+    }
+    .primary-btn,
+    .download-btn{
+        padding: 2rem 5.5rem;
+        margin-right: 2rem;
+    }
+    .habit-card-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .run-left-container,
+    .run-right-container{
+        max-width: 50%;
+    }
+    .primary-btn{
+        padding: 0.5rem 2rem;
+    }
+}
