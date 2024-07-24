@@ -15,12 +15,10 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     background-color: black;
-    border: 2px solid red;
 }
 main{
-    max-width: 85%;
+    /* max-width: 85%; */
     margin: 0 auto;
-    border: 2px solid red;
 }
 /* shared style  */
 .display-flex{
@@ -140,7 +138,6 @@ header{
     color: white;
     font-size: 2.5rem;
     font-weight: 800;
-   
 }
 .free-workout-videos p{
     color: var(--secondary-color);
@@ -175,7 +172,10 @@ header{
     color: red;
 }
 /* habit section style */
-
+.habit-section{
+    max-width: 80%;
+    margin: 2rem auto;
+}
 .habit-info-container{
     max-width: 70%;
     margin: 2rem auto;
@@ -224,6 +224,8 @@ header{
 }
 /* run section style */
 .run-section{
+    max-width: 80%;
+    margin: 2rem auto;
     background-color: rgb(34, 34, 34);
     border-radius: 1rem;
 }
@@ -257,6 +259,10 @@ header{
     border-radius: 1.2rem;
 }
 /* run section style */
+.training-section{
+    max-width: 80%;
+    margin: 2rem auto;
+}
 .training-info-container{
     max-width: 60%;
     margin: 3.5rem 0;
@@ -381,7 +387,190 @@ header{
     top: 80%;
     left: 10%;
 }
-
+/* calculator style */
+.calculator-section{
+    width: 100%;
+    color: white;
+}
+.calculator-info-container
+{
+    max-width: 30%;
+    margin: 3rem auto;
+}
+.calculator-info-container,
+.team-info-container, h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.calculator-info-container,
+.calculator-right-box-info,
+.team-info-container, p{
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.catculator-container{
+    background-color: rgb(34, 34, 34);
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.bmi-table, th, td{
+    border-collapse: collapse;
+    border: 2px solid rgb(122, 122, 122);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.table-caption{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+.calculator-right-form input, select{
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.137);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.7rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+}
+.calculator-right-form-row2 select{
+    width: 100%;
+    color: rgb(99, 97, 97);
+}
+.calculator-right-form-row1,
+.calculator-right-form-row2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.calculator-right-form-row3{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1rem;
+}
+.calculator-right-form-row3 select{
+    width: 100%; 
+}
+/* team section style */
+.team-section{
+    max-width: 80%;
+    margin: 2rem auto;
+}
+.team-info-container{
+    max-width: 40%;
+    margin: 3rem auto;
+    text-align: center;
+}
+.team-card-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.3rem;
+    padding: 1rem;
+}
+.team-card{
+    position: relative;
+    height: 290px;
+    border-radius: 1.1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.team-card-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    top: 70%;
+    left: 5%;
+    z-index: 1;
+}
+.team-card-desc{
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+    top: 73%;
+    left: 5%;
+    z-index: 1;
+}
+.card-1{
+    background-image: url(../images/trainer1.png);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.2);
+    top: 0;
+    border-radius: 1.1rem;
+}
+.card-2{
+    background-image: url(../images/trainer2.png);
+}
+.card-3{
+    background-image: url(../images/trainer3.png);
+}
+.card-4{
+    background-image: url(../images/trainer4.png);
+}
+.card-5{
+    background-image: url(../images/trainer5.png);
+}
+.card-6{
+    background-image: url(../images/trainer6.png);
+}
+footer{
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    padding: 2rem;
+}
+.footer-container{
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+.footer-info-container {
+    max-width: 30%;
+}
+.footer-info-container h3{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--highlighter);
+    margin-bottom: 2rem;
+}
+.footer-about-container,
+.footer-fitness-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-about-container,
+.footer-fitness-container, a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+.footer-copy-container{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+}
 /* small size media query */
 @media screen and (max-width:576px) {
     .header-container,
@@ -389,7 +578,10 @@ header{
     .run-section-content,
     .run-right-container,
     .run-left-container,
-    .training-info-container{
+    .training-info-container,
+    .team-section,
+    .team-info-container,
+    .footer-info-container {
         max-width: 100%;
     }
     .nav-list{
@@ -401,7 +593,9 @@ header{
         margin-right: 1rem;
     }
     .hero-container,
-    .run-section-content{
+    .run-section-content,
+    .catculator-container,
+    .footer-container{
         flex-direction: column;
     }
     .primary-btn{
@@ -428,7 +622,10 @@ header{
     .videos-tutorials{
         right: 10rem;
     }
-    .habit-card-container{
+    .habit-card-container, 
+    .calculator-right-form-row1,
+    .calculator-right-form-row2,
+    .team-card-container{
         grid-template-columns: 1fr;
     }
     .run-left-container{
@@ -438,13 +635,47 @@ header{
     .training-image-row2{
         grid-template-columns:1fr;
     }
+    .calculator-right-form-row3 select,
+    .calculator-right-form-row2 select{
+        width: 100%; 
+    }
+    .calculator-right-form input, select{
+        padding: 1rem 2.1rem;
+    }
+    .calculator-btn{
+        text-align: center;
+    }
+    .calculator-right-box-info{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .calculator-info-container{
+        max-width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .calculator-info-container h3{
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 }
+
 /* medium device media query */
 @media screen and (min-width:576px) and (max-width:992px){
     main{
         max-width: 100%;
     }
-    .header-container{
+    .header-container,
+    .team-section,
+    .team-info-container,
+    .footer-info-container {
         max-width: 100%;
     }
     .nav-container{
@@ -467,7 +698,8 @@ header{
         text-align: center;
         margin: 3.5rem auto;
     }
-    .hero-btn-container{
+    .hero-btn-container,
+    .calculator-btn{
         text-align: center;
     }
     .primary-btn,
@@ -475,7 +707,8 @@ header{
         padding: 2rem 5.5rem;
         margin-right: 2rem;
     }
-    .habit-card-container{
+    .habit-card-container,
+    .team-card-container{
         grid-template-columns:repeat(2,1fr);
     }
     .run-left-container,
@@ -484,5 +717,37 @@ header{
     }
     .primary-btn{
         padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+    }
+    .hero-btn-container button{
+        padding: 1rem 4rem;
+    }
+    .catculator-container{
+        flex-direction: column;
+    }
+    .calculator-right-box-info{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .calculator-right-form-row3 select,
+    .calculator-right-form-row2 select{
+        width: 72%; 
+    }
+    .calculator-right-form input, select{
+        padding: 1rem 1.5rem;
+    }
+    .calculator-right-box-info{
+        max-width: 80%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer-container{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
     }
 }
