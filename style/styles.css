@@ -464,7 +464,8 @@ header{
     max-width: 80%;
     margin: 2rem auto;
 }
-.team-info-container{
+.team-info-container,
+.energy-section-info-container{
     max-width: 40%;
     margin: 3rem auto;
     text-align: center;
@@ -571,6 +572,38 @@ footer{
     letter-spacing: 0.2rem;
     margin-top: 2rem;
 }
+/* energy-section-style */
+.energy-section{
+    max-width: 60%;
+    margin: 2rem auto;
+}
+.energy-image-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+.energy-image img{
+    max-width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 2.1rem;
+}
+.energy-image{
+    transition: all 0.3s ease-in 0s;
+}
+.energy-link-caontainer {
+    text-align: end;
+    margin: 1rem;
+}
+.energy-link-caontainer a{
+    color: var(--highlighter);
+}
+.energy-image:hover{
+    transform: scale(1.05);
+}
 /* small size media query */
 @media screen and (max-width:576px) {
     .header-container,
@@ -581,7 +614,9 @@ footer{
     .training-info-container,
     .team-section,
     .team-info-container,
-    .footer-info-container {
+    .footer-info-container,
+    .energy-section,
+    .energy-section-info-container {
         max-width: 100%;
     }
     .nav-list{
@@ -625,7 +660,8 @@ footer{
     .habit-card-container, 
     .calculator-right-form-row1,
     .calculator-right-form-row2,
-    .team-card-container{
+    .team-card-container,
+    .energy-image-container{
         grid-template-columns: 1fr;
     }
     .run-left-container{
@@ -675,7 +711,8 @@ footer{
     .header-container,
     .team-section,
     .team-info-container,
-    .footer-info-container {
+    .footer-info-container,
+    .energy-section {
         max-width: 100%;
     }
     .nav-container{
@@ -708,7 +745,8 @@ footer{
         margin-right: 2rem;
     }
     .habit-card-container,
-    .team-card-container{
+    .team-card-container,
+    .energy-image-container{
         grid-template-columns:repeat(2,1fr);
     }
     .run-left-container,
